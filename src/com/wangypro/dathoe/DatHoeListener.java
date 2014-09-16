@@ -22,6 +22,12 @@ public class DatHoeListener implements Listener {
 		this.plugin = plugin;
 	}
 	
+	public onPerm(String permission, Player player) {
+		if (player.hasPermission(permission) {
+			return true
+		}
+	}
+	
 	@EventHandler
 	public void onHoeFire(EntityShootBowEvent event) {
 		if(event.getEntity() instanceof Player) {
